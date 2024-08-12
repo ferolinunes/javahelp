@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é POO? - Fernanda Nunes</title>
+    <style>  
+        h1{
+        text-align: center;
+        color: rgb(12, 12, 12);
+        background-color: #ead9d9;
+        padding: 3px;
+        border-radius: 8px;
+        }
+        body{
+        font-family:Georgia;
+        background-color: #ead9d9;
+        justify-content: center;
+        padding: 2%;
+        }
+        form{
+        background-color: #f8f8f8; 
+        border-radius: 2xp;   
+        padding: 35px;
+        }
+        img{
+        width: 35%;    
+        display: block;  
+        margin: auto;  
+        }
+        h4{
+        font-family: Cooperplate;    
+        text-align: center;    
+        }
+        .texto-group{
+            font-size: large;
+            align-items: center;
+        }
+        .legendas{
+            background-color: #ead9d9;
+            font-size: medium;
+            padding: 3px;
+            border-radius: 8px;
+        }
+        .perguntas-group{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        ul{
+            list-style-type: circle;
+        }
+        input{
+        width: 100%;
+        padding: 20px;
+        border: 3px solid #525252;
+        box-sizing:border-box;
+        }
+    </style>    
+</head>
+<body><form>
+    <div class="texto-group"> 
+        <p>Hello Hello! Vamos descobrir juntos o que é e está envolvido em um POO, contéudo tão assustador para alguns!</p>
+     </div>
+    <h1>O que é Programação Orientada a Objetos?</h1>
+    <div class="texto-group"> 
+       <p>Programação Orientada a Objetos (POO) é um <b> paradigma de programação que trata a computação como uma interação entre objetos.</b> 
+        É concentrada na criação de objetos tem suas próprias características e comportamentos.
+        Através da criação de <b> objetos que combinam dados (atributos) e comportamentos (métodos), </b>
+        a POO possibilita a construção de sistemas mais organizados, flexíveis e reutilizáveis. </p>
+        <p>Há métodos que são aplicados aos dados de cada objeto, que iremos entender agora. </p>
+    </div>    
+        <img src="https://www.ateomomento.com.br/wp-content/uploads/2015/06/programacao-orientada-a-objetos.png">
+        <ul>
+            <li><h2>Encapsulamento</h2></li>
+        </ul>
+        <div class="texto-group">
+            <p>É responsável por <b> adicionar segurança à aplicação pelo fato de esconder as propriedades</b>,
+                criando uma espécie de caixa preta. O encapsulamento é implementado com base em <b>propriedades privadas,
+                ligadas a métodos especiais chamados getters e setters, que irão retornar e setar o valor da propriedade </b>, respectivamente. 
+                Essa atitude evita o acesso direto a propriedade do objeto, adicionando uma outra camada de segurança à aplicação.
+            </p>
+            <p>Para fazermos uma comparação com a realidade, há o encapsulamento em outros elementos. Por exemplo, quando clicam no botão ligar da televisão, 
+                não tem como saber o que está acontecendo <b>internamente.</b> Então, é possível dizer que os métodos que ligam a televisão estão encapsulados.
+            </p>
+            <img src="https://2.bp.blogspot.com/-01oyUkStQYg/Wmel1eUo2oI/AAAAAAAAA5g/Ny9yX7irulIVxAYXv5ZyAeUq5IKC42EWQCEwYBhgL/s1600/acessibilidade-0.png">
+            <h4>Exemplo em Java:</h4>
+            <img src="https://hermes.dio.me/assets/articles/4f67414f-7400-4567-afd3-0d193bc59514.png" >
+            <div class="legendas">
+                <p>(A classe Veiculo possui um atributo privado chamado placa.
+                    O encapsulamento é aplicado quando <b> controla o acesso direto a esse atributo e fornece métodos públicos para interagir com ele.</b> 
+                    O método setPlaca é usado para definir a placa do veículo, enquanto o método exibirPlaca é usado para mostrar a placa na saída.)</p>
+            </div>
+        </div>
+        <ul>
+            <li><h2>Herança</h2></li>
+        </ul>
+        <div class="texto-group">
+            <p> Para entender essa característica, tem um exemplo, como em uma família: 
+                a criança, por exemplo, <b> está herdando características de seus pais.</b> 
+                Os pais, herdam algo dos avós, o que faz com que a criança também o faça, e assim sucessivamente. 
+            </p>
+            <p> Na orientação a objetos, a questão é exatamente assim. <b>O objeto abaixo na hierarquia irá herdar características de todos os objetos que estavam acima dele, seus “ancestrais”. </b>
+                A herança a partir das características do objeto mais acima é considerada herança direta, enquanto as demais são consideradas heranças indiretas. 
+                Por exemplo, na família, a criança herda diretamente do pai e indiretamente do avô e do bisavô.
+            </p>
+            <h4>Exemplo em Java:</h4>
+            <img src="https://hermes.dio.me/assets/articles/ddf99cf8-6360-4889-812b-a24795d37355.png">
+            <div class="legendas">
+                <p>(A herança é exemplificada pela relação entre uma classe base Veiculo e suas subclasses Carro e Motocicleta. 
+                    A classe base possui atributos e métodos comuns, que são herdados pelas subclasses.)
+                </p>
+            </div>
+        </div>
+        <ul>
+            <li><h2>Polimorfismo</h2></li>
+        </ul>
+        <div class="texto-group">
+            <p> O polimorfismo consiste na <b> alteração do funcionamento interno de um método herdado de um objeto pai. </b>
+            </p>
+            <p> Como um exemplo, temos um objeto genérico “Eletrodoméstico”. Esse objeto possui um método, ou ação, “Ligar()”. Temos dois objetos, “Televisão” e “Geladeira”, que não irão ser ligados da mesma forma. 
+                Assim, precisamos, para cada uma das classes filhas, reescrever o método “Ligar()”. 
+                Como se trata de um assunto que está intimamente conectado à herança, é necessário compreender os dois.
+            </p>
+        </div>  
+        <h4>Exemplo em Java:</h4>   
+            <img src="https://hermes.dio.me/assets/articles/4818a31c-48b1-4e7f-9296-cd16fe61b6f7.png"/>
+        <div class="legendas">
+            <p>
+                (O polimorfismo é demonstrado quando objetos das classes Carro e Motocicleta (subclasses de Veiculo) são tratados de forma genérica, 
+                chamando o método ligar() que é sobrescrito em cada subclasse.)
+            </p>
+        </div>   
+    <ul>
+    <li><h2>Abstração</h2></li>
+    </ul>
+    <div class="texto-group">
+        <p> O primeiro ponto é dar <b>identidade ao objeto que irá ser criado.</b> Essa identidade deve ser única dentro do sistema para que não haja confusão.
+        </p>
+        <p>
+            A segunda parte diz respeito a <b>características do objeto.</b> No mundo real qualquer objeto possui elementos que o definem. 
+            Dentro da programação orientada a objetos, essas características são nomeadas propriedades. 
+            Por exemplo, as propriedades de um objeto “Cachorro” poderiam ser “Tamanho”, “Raça” e “Idade”.
+        </p>
+        <p>
+            Por fim, a terceira parte é <b>definir as ações que o objeto irá executar.</b> Essas ações, ou eventos, são chamados métodos. 
+            Esses métodos podem ser variáveis, desde “Acender()” em um objeto lâmpada até “Latir()” em um objeto cachorro.
+        </p>
+    </div>
+    <h4>Exemplo em Java:</h4>
+    <img src="https://hermes.dio.me/assets/articles/60d108b7-ac06-4e5a-88f1-6069c4754415.png">
+    <div class="legendas">
+        <p>(A classe abstrata Veiculo serve como uma classe base para as subclasses Carro e Motocicleta. 
+        A classe abstrata Veiculo tem um construtor que recebe a placa do veículo, enquanto a subclasse Carro e Motocicleta estendem a classe base. 
+        Cada subclasse implementa o método abstrato exibirDetalhes, que é responsável por exibir os detalhes específicos de cada tipo de veículo, juntamente com sua placa.)
+        </p>
+    </div>
+    <div class="texto-group">
+        <p>Espero que tenham gostado e entendido esse assunto! Até a próxima!</p>
+    </div>
+    <div class="perguntas-group"> 
+        <label for="perguntas">Tem alguma dúvida?</label>
+        <input type="text" id="facaUmaPergunta" placeholder="Faça uma pergunta..."> 
+    </div>
+    <div class="perguntas-group">
+        <button type="submit"> Enviar</button>
+    </div>
+    <h3>Fontes Bibliográficas</h3>
+    <p><a href="https://www.devmedia.com.br/os-4-pilares-da-programacao-orientada-a-objetos/9264">https://www.devmedia.com.br/os-4-pilares-da-programacao-orientada-a-objetos/9264</a href></p>
+    <p><a href="https://awari.com.br/os-4-pilares-da-programacao-orientada-a-objetos-guia-completo-para-iniciantehttps://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-Y0CN7Gs/">https://awari.com.br/os-4-pilares-da-programacao-orientada-a-objetos-guia-completo-para-iniciantehttps://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-Y0CN7Gs/</a></p>
+    <p><a href="https://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-SSU4Q9">https://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-SSU4Q9</a></p>
+    <p><a href="https://www.youtube.com/watch?v=dXZRgW-X2ls">https://www.youtube.com/watch?v=dXZRgW-X2ls</a></p>
+    <p><a href="https://youtu.be/8VcZkAYygoo?si=GOpXxEny3S7L-gl7">https://youtu.be/8VcZkAYygoo?si=GOpXxEny3S7L-gl7</a></p>
+</body></form>
+</html>
